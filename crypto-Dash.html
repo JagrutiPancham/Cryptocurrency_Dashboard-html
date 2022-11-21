@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoCurrency Dashboard</title>
+    <!-- for close icon used google fonts icon close -cat- Outlined-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- link for gridview  icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Css file for webpage -->
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <!-- Added crypto logo -->
+                <div class="logo">
+                    <img src="./Image/crypto_logo.jpg">
+                </div>
+                <!-- close icon -->
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined">
+                        
+                            close
+                           
+                    </span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-symbols-outlined">person_outline</span>
+                    <h3>Profile update</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">insights</span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">mark_email_read</span>
+                    <h3>Messages</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">receipt_long</span>
+                    <h3>Bitcoins</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">inventory</span>
+                    <h3>Exchange</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">report_gmailerrorred</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">Settings_applications</span>
+                    <h3>Settings</h3>
+                </a>
+                <!-- <a href="#">
+                    <span class="material-symbols-outlined">add</span>
+                    <h3>Add Products</h3>
+                </a> -->
+                <a href="#">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Main section -->
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+            <div class="insights">
+                <div class="investments">
+                    <span class="material-symbols-outlined">Analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Investment</h3>
+                            <h1>$26,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="38"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+                <!-- end of investments div -->
+
+                <div class="expeses">
+                    <span class="material-symbols-outlined">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>$14,011</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="38"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+                <!-- end of expenses div -->
+
+                <div class="income">
+                    <span class="material-symbols-outlined">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>USD Profit</h3>
+                            <h1>$12,012</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="38"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>58%</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+                <!-- end of sales div -->  
+            </div>
+            <!-- end insight div block -->
+
+            <div class="charts">
+                <h2>Earning(Past 12 months)</h2>
+                <canvas id="lineChart"></canvas>
+            </div>
+            
+        </main>
+        <!-- main section ends -->
+
+
+
+
+
+
+        <!-- Start right hand side section -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-symbols-outlined">light_mode</span>
+                    <span class="material-symbols-outlined">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Sakshi</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./Image/crypto_logo.jpg">
+
+                    </div>
+                </div>
+            </div>
+            <!-- top section ends -->
+            <div class="recent-activitiess">
+                <h2>Recent Activity</h2>
+                <div class="activitiess">
+                    <div class="activity">
+                        <div class="message">
+                            <p><b>1,837 USD = 0.084 BTC</b><br/>
+                                1BTC = 8,468 USD</p>
+                            <small class="text-muted">2 minutes ago</small>
+                        </div>
+                    </div>
+
+                    <!-- 2message -->
+                    <div class="activity">
+                        <div class="message">
+                            <p><b>1,837 USD = 0.084 BTC</b><br/>
+                                1BTC = 8,468 USD</p>
+                            <small class="text-muted">1 day ago</small>
+                        </div>
+                    </div>
+
+                    <!-- 3rd message -->
+                    <div class="activity">
+                        <div class="message">
+                            <p><b>1,837 USD = 0.084 BTC</b><br/>
+                                1BTC = 8,468 USD</p>
+                            <small class="text-muted">2 days ago</small>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <!-- Top end -->
+
+            <div class="sales-analytics">
+                <h2>Bitcoins</h2>
+                <div class="item-online">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">currency_bitcoin</span>
+
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Todays Expenditure</h3>
+                            <small class="text-muted">Last 24 hours</small>
+                        </div>
+                        <h5 class="success">$35364</h5>
+                    </div>
+                </div>
+                <!-- 2nd -->
+                <div class="item-offline">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">currency_bitcoin</span>
+
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Profit</h3>
+                            <small class="text-muted">Last 24 hours</small>
+                        </div>
+                        <h5 class="danger">+38%</h5>
+                    </div>
+                </div>
+                <!-- 3rd  -->
+                <div class="item-customer">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">currency_bitcoin</span>
+
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Today's Income</h3>
+                            <small class="text-muted">Last 24 hours</small>
+                        </div>
+                        <h5 class="success">$6768</h5>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <span class="material-symbols-outlined">add</span>
+                        <h3>New Trade</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
